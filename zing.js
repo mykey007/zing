@@ -130,7 +130,7 @@ var chartData={
         "lineWidth":1,
         "line-color":"#003849",
         "marker":{
-            "size":4,
+            "size":8,
             "type":"circle",
             "borderColor":"#fff",
             "borderWidth":1
@@ -145,7 +145,7 @@ var chartData={
         "plotLabel":{
             "multiple":false,
             "callout":false,
-            "shadow":false,
+            "shadow":true,
             "height":"35%",
             "width":"15%",
             "padding":"5px",
@@ -189,8 +189,9 @@ var chartData={
 	//  },
 	"tooltip": {visible:false},
 	plot: {
+		"lineWidth":2,
 			marker: {
-				borderWidth : 10,
+				borderWidth : 20,
 				type: "circle",
 				visible: false
 			}
