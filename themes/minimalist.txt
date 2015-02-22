@@ -1,0 +1,143 @@
+{
+	"palette" : {
+		"vbar" : [
+			["#ffffff", "#151515", "#151515", "#151515"],
+			["#ffffff", "#c90024", "#c90024", "#c90024"],
+			["#ffffff", "#5f5f5f", "#5f5f5f", "#5f5f5f"],
+			["#ffffff", "#8e8e8e", "#8e8e8e", "#8e8e8e"],
+			["#ffffff", "#333333", "#333333", "#333333"]
+
+		],
+		"pie" : [
+			["#ffffff", "#151515", "#151515", "#151515"],
+			["#ffffff", "#c90024", "#c90024", "#c90024"],
+			["#ffffff", "#5f5f5f", "#5f5f5f", "#5f5f5f"],
+			["#ffffff", "#8e8e8e", "#8e8e8e", "#8e8e8e"],
+			["#ffffff", "#333333", "#333333", "#333333"]
+		],
+		"area" : [
+			["#ffffff", "#151515", "#151515", "#151515"],
+			["#ffffff", "#c90024", "#c90024", "#c90024"],
+			["#ffffff", "#5f5f5f", "#5f5f5f", "#5f5f5f"],
+			["#ffffff", "#8e8e8e", "#8e8e8e", "#8e8e8e"],
+			["#ffffff", "#333333", "#333333", "#333333"]
+		],
+		"gauge" : [
+			["#ffffff", "#151515", "#151515", "#151515"],
+			["#ffffff", "#c90024", "#c90024", "#c90024"],
+			["#ffffff", "#5f5f5f", "#5f5f5f", "#5f5f5f"],
+			["#ffffff", "#8e8e8e", "#8e8e8e", "#8e8e8e"],
+			["#ffffff", "#333333", "#333333", "#333333"]
+		],
+		"line" : [
+			["#ffffff", "#151515", "#151515", "#151515"],
+			["#ffffff", "#c90024", "#c90024", "#c90024"],
+			["#ffffff", "#5f5f5f", "#5f5f5f", "#5f5f5f"],
+			["#ffffff", "#8e8e8e", "#8e8e8e", "#8e8e8e"],
+			["#ffffff", "#333333", "#333333", "#333333"]
+		]
+	},
+
+	"graph" : {
+		"backgroundColor" : "#FFFFFF",
+
+		"title" : {
+			"backgroundColor" : -1,
+			"fontColor" : "#333333",
+			"alpha" : "1"
+		},
+		"legend" : {
+			"header" : {
+				"backgroundColor" : "#333333",
+				"borderColor" : "-1",
+				"borderRadiusTopLeft" : "5",
+				"borderRadiusTopRight" : "5"
+			},
+
+			"borderRadius" : "5",
+			"borderColor" : "#333333",
+
+			"item" : {
+				"markerStyle" : "circle",
+				"fontColor" : "#333333",
+				"borderColor" : "#1bc9f2",
+				"lineColor" : "#333333"
+			}	
+		},
+		"scale-x" : {
+				"lineColor" : "#151515",
+				"fontColor" : "#333333",
+				"tick" : {
+					"lineColor" : "#c90024"
+				},
+				"guide" : {
+				"visible" : false	
+				},
+				"item" : {
+					"fontColor" : "#333333"
+				}
+			},
+		"scale-y" : {
+				"lineColor" : "#151515",
+				"fontColor" : "#333333",
+                "label":{"fontColor":"#333333"},
+				"guide" : {
+				"visible" : false	
+				},
+				"tick" : {
+					"lineColor" : "#c90024"
+				},
+				"item" : {
+					"fontColor" : "#333333"
+				}
+		},
+        "source":{"fontColor":"#333333"}
+
+	},
+
+	"area" : {
+		
+		"plot" : {
+			"animate": true,
+            "effect": 4,
+             "lineWidth" : 1,
+             "tooltip-text" : "%v",
+             "aspect" : "spline"
+		},
+		
+		"scale-x" : {
+			"markers" : {
+				"backgroundColor" : "#1bc9f2",
+				"lineColor" : "#947850"
+			}
+		}
+	},
+
+	"gauge" : {
+		"scale-r" : {
+				"tick" : {
+					"lineColor" : "#c90024"
+					},
+				"item" : {
+					"fontColor" : "#333333"
+				}
+				}
+	},
+
+	"pie" : {
+		"plot" : {
+			"animate" : true,
+			"effect" : 3,
+			"highlight" : true,
+			"value-box" : {
+				"type" : "all",
+				"placement" : "in",
+				"backgroundTransparent" : true,
+				"fontSize" : 12,
+				"fontColor" : "#1bc9f2",
+				"lineColor" : "#1bc9f2",
+				"text" : "%t\n %v"
+				}
+		}
+	}
+}

@@ -1,0 +1,144 @@
+{
+	"palette" : {
+		"vbar" : [
+			["#ffffff", "#95664c", "#95664c", "#5b3e2e"],
+			["#ffffff", "#6c8855", "#6c8855", "#465837"],
+			["#242424", "#c4e08c", "#c4e08c", "#71824e"],
+			["#ffffff", "#947850", "#947850", "#372d1e"],
+			["#ffffff", "#7a9b37", "#7a9b37", "#4f6423"]
+
+		],
+		"pie" : [
+			["#ffffff", "#95664c", "#5b3e2e"],
+			["#ffffff", "#6c8855", "#465837"],
+			["#ffffff", "#c4e08c", "#71824e"],
+			["#ffffff", "#947850", "#372d1e"],
+			["#ffffff", "#7a9b37", "#4f6423"]
+		],
+		"area" : [
+			["#95664c", "#95664c", "#5b3e2e"],
+			["#6c8855", "#6c8855", "#465837"],
+			["#c4e08c", "#c4e08c", "#71824e"],
+			["#947850", "#947850", "#372d1e"],
+			["#7a9b37", "#7a9b37", "#4f6423"]
+		],
+		"gauge" : [
+			["#ffffff", "#95664c", "#95664c", "#5b3e2e"],
+			["#ffffff", "#6c8855", "#6c8855", "#465837"],
+			["#242424", "#c4e08c", "#c4e08c", "#71824e"],
+			["#ffffff", "#947850", "#947850", "#372d1e"],
+			["#ffffff", "#7a9b37", "#7a9b37", "#4f6423"]
+		],
+		"line" : [
+			["#ffffff", "#f2cb5f", "#f2cb5f", "#f2cb5f"],
+			["#ffffff", "#e6a452", "#e6a452", "#e6a452"],
+			["#ffffff", "#eda532", "#eda532", "#eda532"],
+			["#ffffff", "#f4c22f", "#f4c22f", "#f4c22f"],
+			["#ffffff", "#ecb979", "#ecb979", "#ecb979"]
+		]
+	},
+
+	"graph" : {
+		"backgroundColor" : "#c4e08c #000000",
+		"backgroundImage" : "images/chart-bg-wood.jpg",
+        "backgroundRepeat":"no-repeat",
+        "backgroundFit":"xy",
+		"title" : {
+			"backgroundColor" : -1,
+			"fontColor" : "#e4efcf",
+			"alpha" : "1",
+			"margin" : "10 0 0 0"
+		},
+		"plotarea" : {
+			
+			"backgroundColor" : "#ffffff",
+			"alpha" : "0.9"
+		},
+		"legend" : {
+			"header" : {
+				"backgroundColor" : "#947850 #604826",
+				"borderColor" : "-1",
+				"borderRadiusTopLeft" : "5",
+				"borderRadiusTopRight" : "5"
+			},
+
+			"borderRadius" : "5",
+			"borderColor" : "#e4efcf",
+
+			"item" : {
+				"markerStyle" : "square",
+				"fontColor" : "#242424",
+				"borderColor" : "#1bc9f2",
+				"lineColor" : "#e4efcf"
+			}	
+		},
+		"scale-x" : {
+				"lineColor" : "#e4efcf",
+				"fontColor" : "#e4efcf",
+				"tick" : {
+					"lineColor" : "#947850"
+				},
+				"item" : {
+					"fontColor" : "#e4efcf"
+				}
+			},
+		"scale-y" : {
+				"lineColor" : "#e4efcf",
+				"fontColor" : "#e4efcf",
+                "label":{"fontColor":"#e4efcf"},
+				"tick" : {
+					"lineColor" : "#947850"
+				},
+				"item" : {
+					"fontColor" : "#e4efcf"
+				}
+		},
+        "source":{"fontColor" : "#e4efcf"}
+
+	},
+
+	"area" : {
+		"plot" : {
+			"animate": true,
+            "effect": 4,
+            "lineWidth" : 1,
+            "tooltipText" : "%v",
+            "aspect" : "spline"
+		},
+		
+		"scale-x" : {
+			"markers" : {
+				"backgroundColor" : "#1bc9f2",
+				"lineColor" : "#947850"
+			}
+		}
+	},
+
+	"gauge" : {
+		"scale-r" : {
+				"tick" : {
+					"lineColor" : "#947850"
+					},
+				"item" : {
+					"fontColor" : "#e4efcf"
+				}
+				}
+	},
+
+	"pie" : {
+		"plot" : {
+			"animate" : true,
+			"effect" : 3,
+			"highlight" : true,
+			"value-box" : {
+				"type" : "all",
+				"placement" : "in",
+				"backgroundTransparent" : true,
+				"fontSize" : 12,
+				"fontColor" : "#1bc9f2",
+				"lineColor" : "#1bc9f2",
+				"text" : "%t\n %v"
+				}
+		}
+	}
+}

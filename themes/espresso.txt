@@ -1,0 +1,104 @@
+{
+	"palette" : {
+		"vbar" : [
+			["#ffffff", "#913c11", "#913c11"],
+			["#ffffff", "#bfaf7f", "#bfaf7f"],
+			["#ffffff", "#57432a", "#57432a"],
+			["#ffffff", "#2b1b0d", "#2b1b0d"],
+			["#ffffff", "#b08e71", "#b08e71"]
+
+		],
+		"pie" : [
+			["#ffffff", "#913c11", "#913c11"],
+			["#ffffff", "#bfaf7f", "#bfaf7f"],
+			["#ffffff", "#57432a", "#57432a"],
+			["#ffffff", "#2b1b0d", "#2b1b0d"],
+			["#ffffff", "#b08e71", "#b08e71"]
+		],
+		"area" : [
+			["#ffffff", "#913c11", "#913c11", "#913c11"],
+			["#ffffff", "#bfaf7f", "#bfaf7f", "#bfaf7f"],
+			["#ffffff", "#57432a", "#57432a", "#57432a"],
+			["#ffffff", "#2b1b0d", "#2b1b0d", "#2b1b0d"],
+			["#ffffff", "#b08e71", "#b08e71", "#b08e71"]
+		],
+		"gauge" : [
+			["#ffffff", "#2b1b0d", "#913c11", "#913c11"],
+			["#ffffff", "#2b1b0d", "#bfaf7f", "#bfaf7f"],
+			["#ffffff", "#2b1b0d", "#57432a", "#57432a"],
+			["#ffffff", "#2b1b0d", "#2b1b0d", "#2b1b0d"],
+			["#ffffff", "#2b1b0d", "#b08e71", "#b08e71"]
+		],
+		"line" : [
+			["#ffffff", "#913c11", "#913c11"],
+			["#ffffff", "#bfaf7f", "#bfaf7f"],
+			["#ffffff", "#57432a", "#57432a"],
+			["#ffffff", "#2b1b0d", "#2b1b0d"],
+			["#ffffff", "#b08e71", "#b08e71"]
+		]
+	},
+
+	"graph" : {
+		"backgroundImage" : "resources/themes/images/espresso-bg.jpg",
+		"backgroundColor" : "#e6eeef #d6dfe0",
+		"title" : {
+			"backgroundColor" : "#57432a #2b1b0d"
+		},
+		"plotarea" : {
+			"backgroundColor" : "#FFFFFF",
+			"alpha" : "0.3"
+		},
+		"legend" : {
+			"header" : {
+				"backgroundColor" : "#57432a #2b1b0d",
+				"borderColor" : "-1",
+				"borderRadiusTopLeft" : "5",
+				"borderRadiusTopRight" : "5"
+			},
+
+			"borderRadius" : "5",
+			"borderColor" : "#ccc",
+
+			"item" : {
+				"markerStyle" : "circle",
+				"fontColor" : "#282828",
+				"borderColor" : "#ccc"
+			}
+		},
+
+		"scale-x" : {
+				"lineColor" : "#913c11",
+				"fontColor" : "#913c11",
+				"tick" : {
+					"lineColor" : "#57432a"
+				},
+				"item" : {
+					"fontColor" : "#57432a"
+				}
+			},
+		"scale-y" : {
+				"lineColor" : "#913c11",
+				"fontColor" : "#913c11",
+                "label":{"fontColor":"#913c11"},
+				"tick" : {
+					"lineColor" : "#57432a"
+				},
+				"item" : {
+					"fontColor" : "#57432a"
+				}
+		},
+        "source":{"fontColor":"#913c11"}
+
+
+	},
+
+	"area" : {
+		"plot" : {
+			"animate": true,
+            "effect": 4,
+            "lineWidth" : 1,
+            "tooltipText" : "%v",
+            "aspect" : "spline"
+		}
+	}
+}

@@ -1,0 +1,80 @@
+{
+	"palette" : {
+		"vbar" : [
+			["#ffffff", "#0c161b", "#1b2b32", "#35525e"],
+			["#ffffff", "#24434a", "#37646f", "#4c8897"],
+			["#ffffff", "#878e91", "#a3abaf", "#c2cbd0"],
+			["#ffffff", "#cfd4d5", "#e1e7e8", "#edf3f4"],
+			["#ffffff", "#8b2425", "#b22e2f", "#e0383a"]
+
+		],
+		"pie" : [
+			["#ffffff", "#0c161b", "#1b2b32", "#35525e"],
+			["#ffffff", "#24434a", "#37646f", "#4c8897"],
+			["#ffffff", "#878e91", "#a3abaf", "#c2cbd0"],
+			["#ffffff", "#cfd4d5", "#e1e7e8", "#edf3f4"],
+			["#ffffff", "#8b2425", "#b22e2f", "#e0383a"]
+
+		],
+		"area" : [
+			["#ffffff", "#0c161b", "#1b2b32", "#35525e"],
+			["#ffffff", "#24434a", "#37646f", "#4c8897"],
+			["#ffffff", "#878e91", "#a3abaf", "#c2cbd0"],
+			["#ffffff", "#cfd4d5", "#e1e7e8", "#edf3f4"],
+			["#ffffff", "#8b2425", "#b22e2f", "#e0383a"]
+
+		],
+		"gauge" : [
+			["#ffffff", "#0c161b", "#1b2b32", "#35525e"],
+			["#ffffff", "#24434a", "#37646f", "#4c8897"],
+			["#ffffff", "#878e91", "#a3abaf", "#c2cbd0"],
+			["#ffffff", "#cfd4d5", "#e1e7e8", "#edf3f4"],
+			["#ffffff", "#8b2425", "#b22e2f", "#e0383a"]
+		],
+		"line" : [
+			["#ffffff", "#0c161b", "#1b2b32", "#35525e"],
+			["#ffffff", "#24434a", "#37646f", "#4c8897"],
+			["#ffffff", "#878e91", "#a3abaf", "#c2cbd0"],
+			["#ffffff", "#cfd4d5", "#e1e7e8", "#edf3f4"],
+			["#ffffff", "#8b2425", "#b22e2f", "#e0383a"]
+		]
+	},
+
+	"graph" : {
+		"backgroundColor" : "#e6eeef #d6dfe0",
+		"title" : {
+			"backgroundColor" : "#b9ced8 #8597a0"
+		},
+		"plotarea" : {
+			"backgroundColor" : "#b9ced8",
+			"alpha" : "0.5"
+		},
+		"legend" : {
+			"header" : {
+				"backgroundColor" : "#b9ced8 #8597a0",
+				"borderColor" : "-1",
+				"borderRadiusTopLeft" : "5",
+				"borderRadiusTopRight" : "5"
+			},
+
+			"borderRadius" : "5",
+			"borderColor" : "#ccc",
+
+			"item" : {
+				"markerStyle" : "circle",
+				"fontColor" : "#282828",
+				"borderColor" : "#ccc"
+			}
+		}
+	},
+			"area" : {
+			"plot" : {
+			"animate": true,
+            "effect": 4,
+            "lineWidth" : 1,
+            "tooltipText" : "%v",
+            "aspect" : "spline"
+		}
+		}
+
+}
