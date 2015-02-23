@@ -3,7 +3,7 @@ $(function () {
 	/* ----------------------------------------------- */
 	/* Chart 10A.1/2 - Social Networking Use, p. 237-8 ------ Chart 9 */
 	/* ----------------------------------------------- */
-	
+	// make data
 	var social_networking_data = [{
 			name: 'All Internet Users',
 			data: [
@@ -85,7 +85,7 @@ $(function () {
 Zing
 */
 
-//load data
+//load data and attributes
 var chartData={
 	"type": "line",
 	"background-color":"#fff",
@@ -151,8 +151,8 @@ var chartData={
             "padding":"5px",
             "border-radius":"3px",
             "alpha":0.8,
-            "headerText": "%k",
-            "text":"<b>%plot-text:</b> <span>%node-value%</span>"
+            "headerText": "<span style='font-size:12px;'>%k</span>",
+            "text":"<b>%plot-text:</b><span>%node-value%</span>"
         }
     },
     "source": {
@@ -190,11 +190,11 @@ var chartData={
 	"tooltip": {visible:false},
 	plot: {
 		"lineWidth":2,
-			marker: {
-				borderWidth : 20,
-				type: "circle",
-				visible: false
-			}
+		marker: {
+			borderWidth : 20,
+			type: "circle",
+			visible: false
+		}
 	},
 	"series": [
 		{"text": social_networking_data[0].name, "values": social_networking_data[0].data},

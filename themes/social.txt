@@ -49,26 +49,17 @@
 		},
 		"legend" : {
 			"header" : {
-				"backgroundColor" : "#d88684 #e64c6d",
+				"backgroundColor" : "#d88684",
 				"borderColor" : "#ccc",
 				"borderRadiusTopLeft" : "5",
 				"borderRadiusTopRight" : "5"
 			},
 			"item" : {
-				"markerStyle" : "circle",
-				"fontColor" : "#282828",
-				"borderColor" : "#ccc"
+				"markerStyle" : "circle"
 			}
 		},
 		"scale-x" : {
-				"lineColor" : "#CCC",
-				"fontColor" : "#c71631",
-				"tick" : {
-					"lineColor" : "#c71631"
-				},
-				"item" : {
-					"fontColor" : "#515151"
-				}
+				"lineColor" : "#CCC"
 			},
 		"scale-y" : {
 				"lineColor" : "#CCC",
