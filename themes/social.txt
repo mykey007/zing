@@ -72,7 +72,7 @@
 					"fontColor" : "#515151"
 				}
 		},
-        "source":{"fontColor":"#c71631"}
+        "source":{"fontColor":"#666"}
 
 	},
 

@@ -86,124 +86,125 @@ Zing
 */
 
 //load data and attributes
-var chartData={
-	"type": "line",
-	"background-color":"#fff",
-	"title":{
-		"text":"Use of Social Networking Sites by Age",
-		color: "#727272",
-	    backgroundColor:"#fff",
-        fontFamily:"serif",
-        fontWeight:"none",
-        fontStyle: "italic",
-        fontSize: "24",
-        textAlign:"left",
-        padding:5
-	},
-	"subtitle":{
-		"text": 'Percent of internet users who use social networking sites',
-		backgroundColor:"#fff",
-        fontColor:"#2c3e50",
-        fontWeight:"normal",
-        fontFamily:"Helvetica",
-        fontSize:14,
-        padding:5,
-        textAlign:"left"
+	var chartData={
+		"type": "line",
+		"background-color":"#fff",
+		"title":{
+			"text":"Use of Social Networking Sites by Age",
+			color: "#727272",
+		    backgroundColor:"#fff",
+	        fontFamily:"serif",
+	        fontWeight:"none",
+	        fontStyle: "italic",
+	        fontSize: "24",
+	        textAlign:"left",
+	        padding:5
+		},
+		"subtitle":{
+			"text": 'Percent of internet users who use social networking sites',
+			backgroundColor:"#fff",
+	        fontColor:"#2c3e50",
+	        fontWeight:"normal",
+	        fontFamily:"Helvetica",
+	        fontSize:14,
+	        padding:5,
+	        textAlign:"left"
 
-	},
-	"legend":{
-        backgroundColor:"#fff",
-        alpha:1,
-        borderWidth:0,
-        shadow:false,
-        "layout":"1x5",
-        "item":{
-		"color":"#333",
-		"font-size":11,
-		"font-family":"sans-serif",
-		"list-style-type":"circle"
-      	},
-      	"position":"100% 0",
-    },
+		},
+		"legend":{
+	        backgroundColor:"#fff",
+	        alpha:1,
+	        borderWidth:0,
+	        shadow:false,
+	        "layout":"1x5",
+	        "item":{
+			"color":"#333",
+			"font-size":11,
+			"font-family":"sans-serif",
+			"list-style-type":"circle"
+	      	},
+	      	"position":"100% 0",
+	    },
 
-    "crosshairX":{
-        "lineWidth":1,
-        "line-color":"#003849",
-        "marker":{
-            "size":8,
-            "type":"circle",
-            "borderColor":"#fff",
-            "borderWidth":1
-        },
-        "scale-label":{
-            "visible": false,
-            "font-color":"#ffffff",
-            "background-color":"#003849",
-            "padding":"5px 10px 5px 10px",
-            "border-radius":"5px"
-        },
-        "plotLabel":{
-            "multiple":false,
-            "callout":false,
-            "shadow":true,
-            "height":"35%",
-            "width":"15%",
-            "padding":"5px",
-            "border-radius":"3px",
-            "alpha":0.8,
-            "headerText": "<span style='font-size:12px;'>%k</span>",
-            "text":"<b>%plot-text:</b><span>%node-value%</span>"
-        }
-    },
-    "source": {
-    	padding:5,
-        "text": "Source: http://www.pewresearch.org/next-america/",
-        "align": "left"
-    },
-	"scale-x":{
-		labels: social_networking_data[0].data[Date],
-		transform:{
-            type:"date"
-        },
-        guide:{
-        	visible:false
-    	},
-	},
-	"scale-y":{
-		values:"0:100:25",
-		format:"%v%",
-		lineColor: "white",
-		"guide":{
-	        "line-width":"0"
-	    }
-	},
-	// "tooltip":{
-	//     "text":"%t: %v% (%k)",
-	//     "background-color":"#fff",
-	//     "border-color":"#333",
-	//     "border-width":"1px",
-	//     "border-radius":"4px",
-	//     "font-color":"#333",
-	//     "font-size": "14px",
-	//     "padding":"10px"
-	//  },
-	"tooltip": {visible:false},
-	plot: {
-		"lineWidth":2,
-		marker: {
-			borderWidth : 20,
-			type: "circle",
-			visible: false
-		}
-	},
-	"series": [
-		{"text": social_networking_data[0].name, "values": social_networking_data[0].data},
-		{"text": social_networking_data[1].name, "values": social_networking_data[1].data},
-		{"text": social_networking_data[2].name, "values": social_networking_data[2].data},
-		{"text": social_networking_data[3].name, "values": social_networking_data[3].data},
-		{"text": social_networking_data[4].name, "values": social_networking_data[4].data}
-	]
-};
+	    "crosshairX":{
+	        "lineWidth":1,
+	        "line-color":"#003849",
+	        "marker":{
+	            "size":8,
+	            "type":"circle",
+	            "borderColor":"#fff",
+	            "borderWidth":1
+	        },
+	        "scale-label":{
+	            "visible": false,
+	            "font-color":"#ffffff",
+	            "background-color":"#003849",
+	            "padding":"5px 10px 5px 10px",
+	            "border-radius":"5px"
+	        },
+	        "plotLabel":{
+	            "multiple":false,
+	            "callout":false,
+	            "shadow":true,
+	            "color": "#666",
+	            "height":"35%",
+	            "width":"15%",
+	            "padding":"5px",
+	            "border-radius":"3px",
+	            "alpha":0.8,
+	            "headerText": "<span style='font-size:14px;'>%k</span>",
+	            "text":"<b>%plot-text:</b> %node-value%"
+	        }
+	    },
+	    "source": {
+	    	padding:5,
+	        "text": "Source: http://www.pewresearch.org/next-america/",
+	        "align": "left"
+	    },
+		"scale-x":{
+			labels: social_networking_data[0].data[Date],
+			transform:{
+	            type:"date"
+	        },
+	        guide:{
+	        	visible:false
+	    	},
+		},
+		"scale-y":{
+			values:"0:100:25",
+			format:"%v%",
+			lineColor: "white",
+			"guide":{
+		        "line-width":"0"
+		    }
+		},
+		// "tooltip":{
+		//     "text":"%t: %v% (%k)",
+		//     "background-color":"#e7e7e7",
+		//     "border-color":"#333",
+		//     "border-width":"1px",
+		//     "border-radius":"4px",
+		//     "font-color":"#333",
+		//     "font-size": "14px",
+		//     "padding":"10px"
+		//  },
+		"tooltip": {visible:false},
+		plot: {
+			"lineWidth":2,
+			marker: {
+				borderWidth : 10,
+				type: "circle",
+				visible: false
+			}
+		},
+		"series": [
+			{"text": social_networking_data[0].name, "values": social_networking_data[0].data},
+			{"text": social_networking_data[1].name, "values": social_networking_data[1].data},
+			{"text": social_networking_data[2].name, "values": social_networking_data[2].data},
+			{"text": social_networking_data[3].name, "values": social_networking_data[3].data},
+			{"text": social_networking_data[4].name, "values": social_networking_data[4].data}
+		]
+	};
     zingchart.render({
         id:'chartDiv',
         data:chartData,
